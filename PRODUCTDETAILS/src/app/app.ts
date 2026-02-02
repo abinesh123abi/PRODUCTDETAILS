@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Tableform } from './components/tableform/tableform';
+import { Home } from './components/home/home';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Tableform ],
+  standalone:true,
+  imports: [RouterOutlet,Home ,Tableform],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
